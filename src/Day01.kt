@@ -8,7 +8,9 @@ fun main() {
     }
 
     fun part2(input: String): Int {
-
+        val sortedSet = sortedSetOf<Int>()
+        PriorityQueue<Int>()
+        sortedSet.size > 3
         val data = input.split("\r\n\r\n").map { it.lines().map { it.toInt() } }
         return data.map { it.sum() }.sortedDescending().take(3).sum()
     }
